@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="/lib/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script>var exports = {};</script>
+</head>
+<body>
+    <div class="board-container">
+        <div id="board"></div>
+        <div class="game-info">
+            <p>Status: <span id="status">White to move</span></p>
+        </div>
+        <div class="controls">
+            <button id="startBtn">Start Position</button>
+            <button id="clearBtn">Clear Board</button>
+            <button id="undoBtn">Undo Move</button>
+        </div>
+        <div class="game-info">
+            <p>Status: <span id="status">White to move</span></p>
+            <p>AI Thinking Time: <span id="thinking-time">0</span>ms</p>
+        </div>
+        <select id="difficulty">
+            <option value="1">Easy (Depth 1)</option>
+            <option value="2">Medium (Depth 2)</option>
+            <option value="3">Hard (Depth 3)</option>
+            <option value="4">Expert (Depth 4)</option>
+        </select>
+    </div>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/chess.js/dist/cjs/chess.js"></script>
+    <script src="/lib/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.min.js"></script>
+    <script src="/lib/stockfish/src/stockfish-nnue-16-single.js"></script>
+    <script src="/js/game.js"></script>
+</body>
+</html>

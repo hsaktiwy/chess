@@ -1,0 +1,1 @@
+npm install @chrisoakman/chessboardjs@1.0.0 chess.js@1.0.0  express@4.21.2 stockfish@16.0.0

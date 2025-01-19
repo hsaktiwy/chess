@@ -1,0 +1,19 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myfirst.js",
+  "scripts": {
+    "start": "node server.js --verbose",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@chrisoakman/chessboardjs": "^1.0.0",
+    "chess.js": "^1.0.0",
+    "express": "^4.21.2",
+    "stockfish": "^16.0.0"
+  }
+}
